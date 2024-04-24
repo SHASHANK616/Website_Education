@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+ }
+.logo{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img{
+    width: 50%;
+    border-radius: 50%;
+    border: 3px solid aqua;
+    margin: 5px;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    cursor: center;
+
+}
+
+.nav-list{
+    width: 50%;
+    /* background-color: black; */
+    display: flex;
+    align-items: center;
+}
+
+.nav-list li{
+    list-style: none;
+    padding: 26px 30px;
+}
+
+.nav-list li a{
+    text-decoration: none;
+    color: aqua;
+    font-size: 20px;
+    font-family:  'Ubuntu' , sans-serif;
+    
+}
+.nav-list li a:hover{
+    text-decoration: none;
+    color: grey;
+    
+}
+
+.rightNav{
+    /* background-color: aqua; */
+    width: 50%;
+    text-align: right;
+    padding: 0 23px;
+}
+
+#search{
+    pad: 5px;
+    font-size: 17px;
+    border: 2px solid grey;
+    border-radius: 9px;
+    align-items: self-end;
+}
+
+.login{
+    border: 2px solid grey;
+    border-radius: 9px;
+}
+
+.background{
+    background: rgb(0, 0, 0, 0.7) url(image/background.jpg);
+    background-size: cover;
+    background-blend-mode: darken ;
+}
+
+.box-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 50%;
+    margin: auto;
+    height: 80%;
+}
+
+.first-section{
+    height: 100vh;
+}
+
+.firstHalf{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.secondHalf{
+   width: 30%; 
+
+}
+
+.secondHalf img{
+    width: 120%; 
+    border: 4px solid white;
+    border-radius: 150px;
+    display: block;
+    margin: auto;
+ }
+
+ .text-big{
+    font-size: 66px;
+ }
+
+ .text-small{
+    font-size: 18px;
+ }
+
+.btn{
+    padding: 8px 20px;
+    margin: 7px 3px;
+    border: 2px solid white;
+    border-radius: 8px;
+    background: none;
+    color: white;
+    cursor: pointer;
+    font-family:  'Ubuntu' , sans-serif;
+    font-size: 20px;
+}
+
+.btn-sm{
+    padding: 6px 10px;
+    vertical-align: middle;
+    font-size: 16px;
+    color: aqua;
+
+}
+
+.btn-dark{
+    color: black;
+    border: 2px solid black;
+}
+
+.section{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 80%;
+    margin: auto;
+    font-family: 'ubuntu', sans-serif;
+    padding: 10px;
+}
+.section-left{
+        flex-direction: row-reverse ;
+    }
+
+.paras{
+    padding: 0px 65px;
+}
+
+.sectionTag{
+    padding: 16px 0;
+}
+
+.sectionSubTag{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.thumbnail img{
+    width: 250px;
+    border: 2px solid black;
+    border-radius: 26px;
+    margin-top: 19px;
+}
+
+.contact{
+    background-color: rgb(251, 250, 247);
+    height: 833px;
+    
+}
+
+.text-center{
+    text-align: center;
+    padding-top: 30px;
+    font-family: 'Ubuntu' , sans-serif;
+    font-size: 35px;
+}
+
+.form{
+    max-width: 62%;
+    margin: 25px auto;
+}
+
+.form-input{
+    margin: 30px 0;
+    padding: 5px 3px;
+    width: 100%;
+    font-size: 19px;
+    border: 2px solid grey;
+    border-radius: 6px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.text-footer{
+    text-align: center;
+    padding: 30px 0;
+    font-family: 'Ubuntu' , sans-serif;
+    display: flex;
+    justify-content: center;
+    color: aqua;
+    
+}
+
+.burger{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 15px;
+
+}
+.line{
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 5px 3px;
+}
+
+@media only screen and (max-width: 1140px){
+    .nav-list{
+        flex-direction: column;
+    }
+    .navbar{
+        flex-direction: column;
+        height: 500px;
+        transition: all 0.7s ease-out;
+    }
+    .rightNav{
+        text-align: center;
+    }
+
+    .box-main{
+        flex-direction: column-reverse;
+        max-width: 100%;
+    }
+
+    #search{
+        width: 100%;
+    }
+    .burger{
+        display: block;
+    }
+    .h-nav{
+        height: 72px;
+
+    }
+
+    .v-class{
+        opacity: 0;
+    }
+
+    .section{
+        flex-direction: column-reverse;
+    }
+    .text-small{
+        text-align: center;
+    }
+    .text-big{
+        text-align: center;
+    }
+
+    .buttons{
+        text-align: center;
+    }
+
+    .paras{
+        padding: 0px 1px;
+    }
+
+    .Login{
+        width: 100%
+        justify-content: 
+    }
+}
+
+.purple{
+    text-align: center;
+    color: green;
+}
+
