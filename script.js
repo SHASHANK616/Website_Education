@@ -9,4 +9,3 @@ burger.addEventListner('click',()=>{
     navbar.classList.toggle('h-nav');
 
 })
-
